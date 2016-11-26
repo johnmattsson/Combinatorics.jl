@@ -87,7 +87,7 @@ end
 
 "Returns s(n, k), the signed Stirling number of first kind"
 function stirlings1(n::Integer, k::Integer)
-    p = poly(0:(n-1))
-    p[n - k + 1]
+    p = poly(0:n-1)
+    p[k]
 end
 
